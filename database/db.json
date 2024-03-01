@@ -1,0 +1,18 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "nome": "Rafael",
+            "sobrenome": "Lima",
+            "email": "rafaellbecom@gmail.com",
+            "senha": "Rafa147258369"
+        },
+        {
+            "id": 2,
+            "nome": "Letícia",
+            "sobrenome": "Cardoso",
+            "email": "leticiacardoso@gmail.com",
+            "senha": "leticia123"
+        }
+    ]
+}

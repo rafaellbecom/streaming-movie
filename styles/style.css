@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* VARIÁVEIS */
+:root{
+    /* CORES */
+    --red-45: #E50000;
+    --red-50: #FF0000;
+    --red-55: #FF1A1A;
+    --red-60: #FF3333;
+    --red-65: #FF9999;
+    --red-70: #FFCCCC;
+
+    --black-45: #0F0F0F;
+    --black-50: #141414;
+    --black-55: #1A1A1A;
+    --black-60: #1F1F1F;
+    --black-65: #262626;
+    --black-70: #333333;
+
+    /* TIPOGRAFIA */
+    --display: 48px;
+    --primario: 38px;
+    --secundario: 28px;
+    --text: 16px;
+    --destaque: 18px;
+
+    /* OUTROS */
+    --altura-header: 84px;
+}
+
+/* GERAIS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+.conteiner{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section{
+    padding: 60px 0;
+}
+
+.content section:first-child{
+    padding-top: calc(var(--altura-header) + 60px) !important;
+}
+
+/* BUTTONS */
+.btn{
+    background-color: var(--red-45);
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: white !important;
+}
+
+/* TIPOGRAFIA */
+a{
+    font-size: var(--destaque);
+}
+
+p{
+    font-size: var(--text);
+}
+
+.display{
+    font-size: var(--display);
+}
+
+.primario{
+    font-size: var(--primario);
+}
+
+.secundario{
+    font-size: var(--secundario);
+}
+
+a, .display, .primario, .secundario{
+    font-weight: bold;
+}
+
+/* FLEX */
+.row{
+    display: flex;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+
+/* HEADER */
+header{
+    padding: 24px 0;
+    position: absolute;
+    width: 100%;
+}
+
+.menu-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.menu-link{
+    text-decoration: none;
+    color: white;
+    transition: .2s;
+}
+
+.menu-link:hover{
+    transition: .2s;
+    color: var(--red-45);
+}
+
+/* FORMULÁRIOS */
+form label{
+    font-size: var(--destaque);
+    font-weight: 500;
+    color: white;
+}
+
+input[type="email"], input[type="password"]{
+    font-size: var(--destaque);
+    color: #999999;
+    padding: 20px;
+    background-color: var(--black-50);
+    border: 1px solid var(--black-65);
+    border-radius: 8px;
+}
+
+input[type="radio"]{
+    margin-right: 5px;
+}
+
+input[type="submit"]{
+    padding: 20px;
+    font-weight: bold;
+    font-size: var(--destaque);
+    border: 0px;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/login.css">
+
+    <script src="js/login.js" defer type="module"></script>
+
+    <title>Login | StreamVibe</title>
+</head>
+<body id="page-login">
+    <header>
+        <div class="conteiner">
+            <img src="assets/logo.png" alt="Logo StreamVibe" class="logo">
+
+            <nav class="main-menu">
+                <ul class="menu-list">
+                    <li><a href="index.html" class="menu-link">Home</a></li>
+                    <li><a href="pages/autor.html" class="menu-link">Sobre o desenvolvedor</a></li>
+                    <li><a href="pages/registre-se.html" class="menu-link">Registre-se</a></li>
+                    <li><a href="index.html" class="menu-link btn">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+        <section class="display-login">
+            <div class="content-form">
+                <h1 class="primario">Entrar</h1>
+                <form class="login-form">
+                    <div class="row">
+                        <div class="col">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="Email" class="input-email" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="email">Senha</label>
+                            <input type="password" name="senha" placeholder="Senha" class="input-password" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <input type="radio" name="cookie" value="true" />
+                        <label for="cookie">Lembre-se de mim</label>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <input class="btn" type="submit" placeholder="Entrar">
+                        </div>
+                    </div>
+                    
+                </form>
+                
+                <div class="row other-links">
+                    <div class="col">
+                        <a href="/pages/recuperar-senha.html">Esqueceu a Senha?</a>
+                        <span>Novo por aqui? <a href="/pages/registre-se">Assine agora</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

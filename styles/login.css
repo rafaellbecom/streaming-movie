@@ -1,0 +1,44 @@
+.display-login{
+    min-height: 100vh;
+    background-image: url('/assets/login/bg-display.png');
+    background-position: center;
+    background-size: cover;
+    background-color: var(--black-50);
+}
+
+.content-form{
+    max-width: 50%;
+    margin: auto;
+    padding: 50px;
+    background-color: #0F0F0F;
+    border: 1px solid #262626;
+    border-radius: 12px;
+}
+
+.content-form h1{
+    color: white;
+    text-align: center;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.other-links .col{
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 14px;
+}
+
+.other-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.other-links a:hover{
+    color: #E50000;
+    text-decoration: underline;
+}
