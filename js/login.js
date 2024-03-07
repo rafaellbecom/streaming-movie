@@ -1,7 +1,9 @@
 import { api } from "./api.js"
 
-const loginFormulario = document.querySelector('.login-form')
+const url = 'http://localhost:3000/users'
+const options = {}
 
+const loginFormulario = document.querySelector('.login-form')
 loginFormulario.addEventListener('submit', (e) => login(e))
 
 async function login(e){
@@ -11,7 +13,7 @@ async function login(e){
     const senha = loginFormulario.querySelector('.input-password').value
     
     if(email && senha) {
-        const users = await api.getData('users')
+        const users = await api.getData(url, options)
         const consulta = users.filter((user) => {
             const userEmail = user.email
             const userSenha =  user.senha
@@ -21,7 +23,9 @@ async function login(e){
         if(consulta.length > 0) {
             window.location.href = '../pages/home.html'
         } else {
-            alert('Login ou Senha Inválidos')
+            alert('Email ou Senha Inválidos')
         }
+    } else {
+        alert('Digite Email e Senha')
     }
 }

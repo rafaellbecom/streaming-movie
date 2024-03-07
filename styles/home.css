@@ -1,0 +1,72 @@
+.list-featured-movies{
+    margin: 0;
+}
+
+.featured-movies li{
+    width: 100%;
+    min-height: 75vh;
+    background-color: red;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #262626;
+    list-style-type: none;
+    border-radius: 12px;
+    display: flex;
+    align-content: stretch;
+}
+
+.featured-movies li .bg-overlay{
+    background: rgb(38,38,38);
+    background: linear-gradient(360deg, #141414 0%, #14141400 100%);
+    padding: 50px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.featured-movies h1{
+    color: white;
+    margin-bottom: 16px;
+}
+
+.featured-movies p{
+    color: #999999;
+    text-align: center;
+    max-width: 80%;
+}
+
+.featured-movies .action-buttons{
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.featured-movies button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    fill: white;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+.featured-movies .button-play{
+    gap: 8px;
+    background-color: #E50000;
+    border: none;
+    padding: 14px 24px;
+}
+
+.featured-movies .button-add-to-favorites-list{
+    background-color: #0F0F0F;
+    border: 1px solid #262626;
+}
+
+.featured-movies .action-buttons svg{
+    width: 16px;
+}

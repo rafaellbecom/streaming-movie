@@ -1,7 +1,5 @@
-const url = 'http://localhost:3000/' 
-
-async function getData(endpoint){
-    const busca = await fetch(`http://localhost:3000/${endpoint}`)
+async function getData(url, options){
+    const busca = await fetch(url, options)
     const data = await busca.json()
     return data
 }

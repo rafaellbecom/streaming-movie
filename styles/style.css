@@ -40,13 +40,14 @@
 .conteiner{
     width: 90%;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 section{
     padding: 60px 0;
+}
+
+.content{
+    background-color: var(--black-50);
 }
 
 .content section:first-child{
@@ -105,16 +106,22 @@ header{
     width: 100%;
 }
 
+header .conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .menu-list{
     list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 28px;
 }
 
 .menu-link{
-    text-decoration: none;
+    text-decoration: none !important;
     color: white;
     transition: .2s;
 }
@@ -122,6 +129,29 @@ header{
 .menu-link:hover{
     transition: .2s;
     color: var(--red-45);
+}
+
+.menu-link.active{
+    color: var(--red-45);
+}
+
+.search-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 100px;
+    transition: .2s;
+}
+
+.search-link:hover{
+    background-color: var(--red-45);
+    transition: .2s;
+}
+
+.search-link svg{
+    width: 16px;
+    fill: white;
 }
 
 /* FORMULÁRIOS */
@@ -153,4 +183,50 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     cursor: pointer;
+}
+
+/* SLIDER */
+.slider-container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider{
+    display: flex;
+}
+
+.slide{
+    flex: 0 0 100%;
+}
+
+.slider-controls{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-controls button{
+    background-color: var(--black-50);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.slider-controls svg{
+    width: 16px;
+    color: white;
+    fill: white;
+}
+  
+.slider-controls #prevBtn {
+    left: 10px;
+}
+  
+.slider-controls #nextBtn {
+    right: 10px;
 }
