@@ -14,10 +14,8 @@ const listFeaturedMovies = document.querySelector('.list-featured-movies')
 async function showingFeaturedFilms() {
     const data = await api.getData(url, options)
     const movies = data.results
-    const topMovies = movies.slice(0, 5)
-    console.log(topMovies)
-    console.log(movies)
-    await topMovies.forEach((movie) => {
+    const feeaturedMovies = movies.slice(0, 5)
+    await feeaturedMovies.forEach((movie) => {
       const movieFeatured = createFeaturedMovieItem(movie)
       listFeaturedMovies.appendChild(movieFeatured)
     })   
